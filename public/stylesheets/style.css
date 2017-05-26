@@ -1,0 +1,50 @@
+.nav-link {
+    display: inline;
+    margin: 5px;
+    padding: 5px;
+}
+
+.nav-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.campuses-view{
+    position: relative;
+    float: left;
+    width:  900px;
+    height: 900px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+}
+
+.single-campus-view{
+    float: left;
+    width:  100px;
+    height: 100px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+}
+
+
+.campus-container{
+    position: relative;
+
+}
+
+.new-line{
+    clear:both;
+}
+
+.student-link{
+    margin: 5px;
+    padding: 5px;
+
+}
+
+.del-student{
+
+}
