@@ -3,6 +3,7 @@
 
 import Campuses from '../components/Campuses';
 import {connect} from 'react-redux';
+import {deleteOneCampus} from '../action-creator/campuses'
 
 //a container to the campuses
 const mapStateToProps = (state) =>{
@@ -12,8 +13,19 @@ const mapStateToProps = (state) =>{
 
 }
 
+
+
+const mapDispatchToProp = (dispatch) => {
+
+    return{
+        deleteOneCampus: (campusId)=>{dispatch(deleteOneCampus(campusId));}
+    }
+
+
+}
+
 const CampusesContainer = connect(
-    mapStateToProps, null
+    mapStateToProps, mapDispatchToProp
 )(Campuses);    //connecting the campuses to the state
 
 export default CampusesContainer;

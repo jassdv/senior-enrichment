@@ -29,3 +29,12 @@ export const getCampusById = (campudId) =>{
 
 }
 
+export const deleteOneCampus = (campusId) => {
+    return dispatch =>{
+        axios.delete(`/api/campuses/${campusId}`)
+            .then(responses=>{
+                dispatch(receiveCampus(responses.data));
+            });
+    }
+}
+

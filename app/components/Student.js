@@ -45,11 +45,15 @@ export default function Student (props) {
 
     return (
         <div>
+            <div>
+                <h1>{`${studentName} - ${studentEmail} - ${campusName}`}</h1>
+                <h2>Update Student Form</h2>
+            </div>
             <form  onSubmit={handleUpdateSubmit}>
                 <label>Student Name:</label>
-                <input type="text" name="firstname" value={studentName}></input>
+                <input type="text" name="firstname" ></input>
                 <label>Student Email</label>
-                <input type="text" name="email" value={`${studentEmail}`}></input>
+                <input type="text" name="email" ></input>
                 <select name="campus" id="campusId">
                     {
                         campuses && campuses.campuses.map((campus)=> {

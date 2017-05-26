@@ -194,11 +194,15 @@ api.delete('/campuses/:campusId',(req,res,next)=>{
 
         }
         else{
-            res.sendStatus(204);
+            return Campus.findAll();
 
         }
 
-    }).catch(()=>{
+    }).then((campuses)=>{
+        res.status(200).send(campuses);
+
+    })
+        .catch(()=>{
         next(404);
         }
     );

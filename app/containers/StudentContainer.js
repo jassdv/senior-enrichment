@@ -14,7 +14,6 @@ const mapStateToProps = (state) =>{
 }
 
 const mapDispatchToProp = (dispatch,ownProps) => {
-
     return{
         handleUpdateSubmit: (evt)=>{
             dispatch(updateStudent(ownProps.params.studentId,evt.target.firstname.value,evt.target.email.value,evt.target.campusId.value[0]));}
