@@ -3,7 +3,7 @@ import React from 'react';
 
 //a form to add a student to the state
 export default function AddStudent (props) {
-    const handleSubmit = props.handleSubmit;        //a function to handle te submit utton
+    const handleSubmit = props.handleSubmit;        //a function to handle te submit button
     const campuses = props.campuses;                //all the campuses
 
 
